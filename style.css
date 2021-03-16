@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    ;
+   
+}
+main{
+    width: 100%;
+    height: 100%; 
+}
+
+/* Back-ground */
+.top-desktop{
+    width: 50%;
+}
+.bottom-desktop{
+    width: 50%;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.top-mobile{
+    display: none;
+}
+.bottom-mobile{
+    display: none;
+}
+
+
+/* Upper-Section */
+
+.upper-section{
+    position: absolute;  
+    top: 20%;
+}
+.part-1{
+ float: left;
+ width: 30%;
+ margin-top: -6%;
+margin-left: 10%
+}
+.part-2{
+ float: right;
+ margin-right: 30%;
+ margin-top: -5%;
+    
+}
+.review{
+    background-color:hsl(300, 24%, 96%) ;
+    height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width: 150%;
+    margin: 10%;
+    border-radius:.6rem;
+}
+.five-star{
+    margin: 0 5%;
+    color: hsl(300, 43%, 22%);
+
+}
+.Upper-section-heading{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.Upper-section-text{
+    color: hsl(303, 10%, 53%);
+    margin-top: -6%;
+}
+
+/* Lower-Section */
+
+.part-3{
+   
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+.part-4{
+    position: absolute;
+    left: 40%;
+    bottom: 7%;
+}
+.part-5{
+   
+    position: absolute;
+    left: 70%;
+    bottom: 4%;
+}
+
+.commenter-dp{
+    width: 10%;
+    border-radius: 100%;
+  float: left;
+  margin: 2% 5% 0 10%;
+}
+.profile-name{
+    color: white;
+    padding: 10px 0 0;
+    font-weight: 500;
+}
+.verified-buyer{
+    padding-left: 85px;
+    margin-top: -3%;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+.comment-text{
+    width: 80%;
+   padding-left: 10%;
+   color: hsl(300, 24%, 96%);
+}
+.part-3, .part-4, .part-5{
+    padding-top: 1%;
+    padding-bottom: 1%;
+   width: 25%;
+   height: 200px;
+    background-color: hsl(300, 43%, 22%);
+   padding: 0 auto;
+   border-radius: .5rem;
+}
+
+
+/* For Mobile */
+
+@media (max-width: 360px)
+{
+  body{
+      height: 960px;
+      margin: 0;
+      padding: 0;
+  }
+   /* Background */
+   .top-desktop{
+    display:none;
+   }
+   .bottom-desktop{
+       display: none;
+       
+   }
+   .top-mobile, .bottom-mobile{
+       display: inline;
+       width: 90%;
+   }
+
+/* Upper Section */
+
+.upper-section{
+    margin: 0 auto;
+    
+}
+/* Part-1 */
+.part-1{
+ width: 90%;
+ margin:-25% 0 0 5%;
+} 
+.Upper-section-heading{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.Upper-section-text{
+    color: hsl(303, 10%, 53%);
+    margin-top: -2%;
+    margin-left: -5%;
+    width: 105%;
+    text-align: center;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Part-2 */
+
+.part-2{
+ margin-top: 2%;
+    
+}
+.review{
+    background-color:hsl(300, 24%, 96%) ;
+    height: 80px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+    width:300px;
+    margin: 5% 0 2% 25%;
+    line-height: 2;
+    border-radius:.6rem;
+}
+.five-star{
+   width: 100%;
+   color: hsl(300, 43%, 22%);
+}
+
+/* Lower-Section */
+.lower-section{
+
+}
+.part-3{
+ bottom: -55%; 
+}
+.part-4{
+ bottom: -100%;
+}
+.part-5{
+    bottom: -145%;  
+}
+  
+.commenter-dp{
+    width: 15%;
+    border-radius: 100%;
+    float: left;
+    margin: 2% 5% 0 10%;
+}
+.profile-name{
+      color: white;
+      
+      font-weight: 500;
+}
+.verified-buyer{
+     
+      margin-top: -4%;
+      color: hsl(333, 80%, 67%);
+      font-weight: 400;
+}
+.comment-text{
+      width: 80%;
+     font-size: .8rem;
+     color: hsl(300, 24%, 96%);
+     line-height: 1.5;
+    
+}
+.part-3, .part-4, .part-5{
+    position:absolute;
+     width: 300px;
+     height: 230px;
+      background-color: hsl(300, 43%, 22%);
+     padding: 0 auto;
+     left: 7%;
+     border-radius: .5rem;
+    }
+} 
